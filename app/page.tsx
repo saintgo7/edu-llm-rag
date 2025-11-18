@@ -7,19 +7,19 @@ export default function Home() {
       title: 'LLM RAG 완전 정복 강의',
       description: '컴퓨터공학 학생을 위한 Retrieval-Augmented Generation 시스템 완벽 가이드',
       icon: '🤖',
-      modules: 6,
-      duration: '2시간 15분',
+      modules: 12,
+      duration: '6시간 40분',
       href: '/rag-lecture',
-      level: '초급~중급',
-      tags: ['RAG', 'LLM', 'Vector DB', 'NLP'],
+      level: '초급~고급',
+      tags: ['RAG', 'LLM', 'Vector DB', 'LlamaIndex', 'Haystack'],
     },
   ];
 
   const stats = [
     { label: '총 강의 수', value: '1' },
-    { label: '총 학습 시간', value: '2.25시간' },
-    { label: '강의 모듈', value: '6개' },
-    { label: '실습 예제', value: '5개' },
+    { label: '총 학습 시간', value: '6.67시간' },
+    { label: '강의 모듈', value: '12개' },
+    { label: '실습 예제', value: '50+개' },
   ];
 
   return (

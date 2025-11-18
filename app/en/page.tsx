@@ -7,18 +7,18 @@ export default function EnHome() {
       title: 'Master LLM & RAG Complete Course',
       description: 'A comprehensive guide to Retrieval-Augmented Generation systems for computer science students',
       icon: '🤖',
-      modules: 10,
-      duration: '4 hours 45 minutes',
+      modules: 12,
+      duration: '6 hours 40 minutes',
       href: '/en/rag-lecture',
-      level: 'Beginner~Intermediate',
-      tags: ['RAG', 'LLM', 'Vector DB', 'NLP'],
+      level: 'Beginner~Advanced',
+      tags: ['RAG', 'LLM', 'Vector DB', 'LlamaIndex', 'Haystack'],
     },
   ];
 
   const stats = [
     { label: 'Total Courses', value: '1' },
-    { label: 'Total Study Time', value: '4.75 hours' },
-    { label: 'Lecture Modules', value: '10' },
+    { label: 'Total Study Time', value: '6.67 hours' },
+    { label: 'Lecture Modules', value: '12' },
     { label: 'Practice Exercises', value: '50+' },
   ];
 

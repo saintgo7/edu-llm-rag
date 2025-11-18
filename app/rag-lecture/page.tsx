@@ -96,6 +96,24 @@ export default function RAGLecturePage() {
       href: '/rag-lecture/module-10',
       level: '고급',
     },
+    {
+      id: 11,
+      title: 'LlamaIndex와 데이터 프레임워크',
+      duration: '50분',
+      description: '프로덕션 레벨의 데이터 관리 및 인덱싱 프레임워크',
+      completed: false,
+      href: '/rag-lecture/module-11',
+      level: '고급',
+    },
+    {
+      id: 12,
+      title: 'Haystack과 실시간 RAG 시스템',
+      duration: '55분',
+      description: '엔터프라이즈급 RAG 프레임워크 및 스트리밍 구현',
+      completed: false,
+      href: '/rag-lecture/module-12',
+      level: '고급',
+    },
   ];
 
   const keyPoints = [
@@ -120,9 +138,9 @@ export default function RAGLecturePage() {
             컴퓨터공학 학생을 위한 Retrieval-Augmented Generation 시스템 완벽 가이드
           </p>
           <div className="mt-4 flex gap-4 text-sm text-gray-600">
-            <span>총 10개 모듈</span>
+            <span>총 12개 모듈</span>
             <span>|</span>
-            <span>약 5시간</span>
+            <span>약 6시간 40분</span>
           </div>
         </div>
       </header>
