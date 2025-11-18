@@ -1,25 +1,25 @@
 import Link from 'next/link';
 
-export default function Home() {
+export default function EnHome() {
   const courses = [
     {
       id: 1,
-      title: 'LLM RAG 완전 정복 강의',
-      description: '컴퓨터공학 학생을 위한 Retrieval-Augmented Generation 시스템 완벽 가이드',
+      title: 'Master LLM & RAG Complete Course',
+      description: 'A comprehensive guide to Retrieval-Augmented Generation systems for computer science students',
       icon: '🤖',
-      modules: 6,
-      duration: '2시간 15분',
-      href: '/rag-lecture',
-      level: '초급~중급',
+      modules: 10,
+      duration: '4 hours 45 minutes',
+      href: '/en/rag-lecture',
+      level: 'Beginner~Intermediate',
       tags: ['RAG', 'LLM', 'Vector DB', 'NLP'],
     },
   ];
 
   const stats = [
-    { label: '총 강의 수', value: '1' },
-    { label: '총 학습 시간', value: '2.25시간' },
-    { label: '강의 모듈', value: '6개' },
-    { label: '실습 예제', value: '5개' },
+    { label: 'Total Courses', value: '1' },
+    { label: 'Total Study Time', value: '4.75 hours' },
+    { label: 'Lecture Modules', value: '10' },
+    { label: 'Practice Exercises', value: '50+' },
   ];
 
   return (
@@ -28,10 +28,10 @@ export default function Home() {
       <nav className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold text-gray-900">📚 CS 학생을 위한 LLM/RAG 교육</h1>
+            <h1 className="text-2xl font-bold text-gray-900">📚 LLM/RAG Education for CS Students</h1>
             <div className="flex items-center gap-4">
-              <Link href="/en" className="text-sm text-blue-600 hover:text-blue-800">
-                English
+              <Link href="/" className="text-sm text-blue-600 hover:text-blue-800">
+                한국어
               </Link>
               <div className="text-sm text-gray-600">v1.0</div>
             </div>
@@ -44,11 +44,11 @@ export default function Home() {
         <section className="mb-16">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              LLM과 RAG를 마스터하세요
+              Master LLM and RAG
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              최신 AI 기술을 실무 중심으로 배우는 맞춤형 강의 플랫폼.
-              이론부터 실습까지 완벽하게 학습하세요.
+              A practice-focused learning platform for cutting-edge AI technology.
+              Learn everything from theory to hands-on implementation.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export default function Home() {
 
         {/* Courses Grid */}
         <section className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">이용 가능한 강의</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-8">Available Courses</h3>
           <div className="grid grid-cols-1 gap-6">
             {courses.map((course) => (
               <Link key={course.id} href={course.href}>
@@ -83,7 +83,7 @@ export default function Home() {
                           {course.level}
                         </span>
                         <div className="text-gray-600 text-sm">
-                          <div>📦 {course.modules}개 모듈</div>
+                          <div>📦 {course.modules} modules</div>
                           <div>⏱️ {course.duration}</div>
                         </div>
                       </div>
@@ -103,7 +103,7 @@ export default function Home() {
                     </div>
 
                     <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg group-hover:bg-blue-700 transition-colors">
-                      강의 보기 →
+                      View Course →
                     </button>
                   </div>
                 </div>
@@ -114,29 +114,29 @@ export default function Home() {
 
         {/* Features Section */}
         <section className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">강의의 특징</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-8">Course Features</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="text-4xl mb-4">📖</div>
-              <h4 className="text-lg font-bold text-gray-900 mb-2">이론부터 실습까지</h4>
+              <h4 className="text-lg font-bold text-gray-900 mb-2">Theory to Practice</h4>
               <p className="text-gray-600">
-                개념 설명과 실제 코드 예제를 통해 깊이 있는 학습을 제공합니다.
+                Comprehensive learning with concept explanations and real-world code examples.
               </p>
             </div>
 
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="text-4xl mb-4">💻</div>
-              <h4 className="text-lg font-bold text-gray-900 mb-2">실습 코드 제공</h4>
+              <h4 className="text-lg font-bold text-gray-900 mb-2">Hands-on Exercises</h4>
               <p className="text-gray-600">
-                Python을 활용한 실습 예제로 직접 구현하고 실험할 수 있습니다.
+                Learn by doing with Python-based practical examples and implementations.
               </p>
             </div>
 
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="text-4xl mb-4">🎯</div>
-              <h4 className="text-lg font-bold text-gray-900 mb-2">실무 중심 커리큘럼</h4>
+              <h4 className="text-lg font-bold text-gray-900 mb-2">Industry-Focused</h4>
               <p className="text-gray-600">
-                업계에서 실제로 사용되는 기술과 최신 트렌드를 반영합니다.
+                Reflects technologies and trends actually used in the industry.
               </p>
             </div>
           </div>
@@ -144,38 +144,38 @@ export default function Home() {
 
         {/* Learning Path */}
         <section className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">학습 경로</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-8">Learning Path</h3>
           <div className="bg-white rounded-lg shadow-md p-8">
             <div className="space-y-4">
               <div className="flex items-center gap-4">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 font-bold">1</div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">기본 개념 학습</h4>
-                  <p className="text-gray-600">LLM과 RAG의 기본 원리를 이해합니다</p>
+                  <h4 className="font-semibold text-gray-900">Learn Fundamentals</h4>
+                  <p className="text-gray-600">Understand the basics of LLM and RAG</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-4">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 font-bold">2</div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">RAG 아키텍처 분석</h4>
-                  <p className="text-gray-600">검색, 증강, 생성 3단계를 상세히 학습합니다</p>
+                  <h4 className="font-semibold text-gray-900">RAG Architecture</h4>
+                  <p className="text-gray-600">Deep dive into retrieval, augmentation, and generation phases</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-4">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 font-bold">3</div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">직접 구현하기</h4>
-                  <p className="text-gray-600">Python으로 RAG 시스템을 직접 만들어봅니다</p>
+                  <h4 className="font-semibold text-gray-900">Hands-on Implementation</h4>
+                  <p className="text-gray-600">Build your own RAG system with Python</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-4">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 font-bold">4</div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">최적화 및 배포</h4>
-                  <p className="text-gray-600">성능 개선과 실제 운영 방법을 배웁니다</p>
+                  <h4 className="font-semibold text-gray-900">Optimization & Deployment</h4>
+                  <p className="text-gray-600">Learn performance tuning and production deployment</p>
                 </div>
               </div>
             </div>
@@ -185,13 +185,13 @@ export default function Home() {
         {/* CTA */}
         <section className="text-center mb-12">
           <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg shadow-lg p-12 text-white">
-            <h3 className="text-3xl font-bold mb-4">지금 바로 시작하세요!</h3>
+            <h3 className="text-3xl font-bold mb-4">Start Learning Now!</h3>
             <p className="text-lg mb-8 text-blue-100">
-              최신 AI 기술을 배우고 미래의 개발자가 되어보세요.
+              Master cutting-edge AI technology and become a developer of the future.
             </p>
-            <Link href="/rag-lecture">
+            <Link href="/en/rag-lecture">
               <button className="px-8 py-3 bg-white text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-colors text-lg">
-                강의 시작하기
+                Start Course
               </button>
             </Link>
           </div>
@@ -200,45 +200,45 @@ export default function Home() {
 
       {/* Support Section */}
       <section className="max-w-7xl mx-auto px-6 mb-16">
-        <h3 className="text-2xl font-bold text-gray-900 mb-8">🛠️ 학습 도구</h3>
+        <h3 className="text-2xl font-bold text-gray-900 mb-8">🛠️ Learning Tools</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-          <Link href="/dashboard">
+          <Link href="/en/dashboard">
             <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer text-center">
               <div className="text-3xl mb-3">📊</div>
-              <h3 className="font-bold text-gray-900 mb-2">학습 대시보드</h3>
-              <p className="text-gray-600 text-sm">진도 추적</p>
+              <h3 className="font-bold text-gray-900 mb-2">Learning Dashboard</h3>
+              <p className="text-gray-600 text-sm">Track Progress</p>
             </div>
           </Link>
 
-          <Link href="/exercises">
+          <Link href="/en/exercises">
             <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer text-center">
               <div className="text-3xl mb-3">📝</div>
-              <h3 className="font-bold text-gray-900 mb-2">실습 문제</h3>
-              <p className="text-gray-600 text-sm">문제 풀이</p>
+              <h3 className="font-bold text-gray-900 mb-2">Practice Problems</h3>
+              <p className="text-gray-600 text-sm">Solve Exercises</p>
             </div>
           </Link>
 
-          <Link href="/setup-guide">
+          <Link href="/en/setup-guide">
             <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer text-center">
               <div className="text-3xl mb-3">⚙️</div>
-              <h3 className="font-bold text-gray-900 mb-2">설정 가이드</h3>
-              <p className="text-gray-600 text-sm">환경 설정</p>
+              <h3 className="font-bold text-gray-900 mb-2">Setup Guide</h3>
+              <p className="text-gray-600 text-sm">Environment Setup</p>
             </div>
           </Link>
 
-          <Link href="/faq">
+          <Link href="/en/faq">
             <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer text-center">
               <div className="text-3xl mb-3">❓</div>
-              <h3 className="font-bold text-gray-900 mb-2">자주 묻는 질문</h3>
-              <p className="text-gray-600 text-sm">FAQ</p>
+              <h3 className="font-bold text-gray-900 mb-2">FAQ</h3>
+              <p className="text-gray-600 text-sm">Common Questions</p>
             </div>
           </Link>
 
-          <Link href="/certificate">
+          <Link href="/en/certificate">
             <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer text-center">
               <div className="text-3xl mb-3">📜</div>
-              <h3 className="font-bold text-gray-900 mb-2">인증서</h3>
-              <p className="text-gray-600 text-sm">수료증</p>
+              <h3 className="font-bold text-gray-900 mb-2">Certificate</h3>
+              <p className="text-gray-600 text-sm">Completion Certificate</p>
             </div>
           </Link>
         </div>
@@ -249,20 +249,20 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h4 className="font-bold mb-4">강의 플랫폼</h4>
-              <p className="text-gray-400">컴공 학생을 위한 LLM과 RAG 교육 플랫폼</p>
+              <h4 className="font-bold mb-4">Learning Platform</h4>
+              <p className="text-gray-400">LLM and RAG education platform for CS students</p>
             </div>
             <div>
-              <h4 className="font-bold mb-4">다루는 주제</h4>
+              <h4 className="font-bold mb-4">Topics Covered</h4>
               <ul className="text-gray-400 space-y-2 text-sm">
-                <li>• 대형언어모델(LLM)</li>
-                <li>• 검색증강생성(RAG)</li>
-                <li>• 벡터 데이터베이스</li>
-                <li>• 프롬프트 엔지니어링</li>
+                <li>• Large Language Models (LLM)</li>
+                <li>• Retrieval-Augmented Generation (RAG)</li>
+                <li>• Vector Databases</li>
+                <li>• Prompt Engineering</li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold mb-4">기술 스택</h4>
+              <h4 className="font-bold mb-4">Tech Stack</h4>
               <ul className="text-gray-400 space-y-2 text-sm">
                 <li>• Python</li>
                 <li>• LangChain</li>
