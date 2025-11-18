@@ -193,6 +193,43 @@ export default function Home() {
         </section>
       </main>
 
+      {/* Support Section */}
+      <section className="max-w-7xl mx-auto px-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <Link href="/setup-guide">
+            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer text-center">
+              <div className="text-3xl mb-3">⚙️</div>
+              <h3 className="font-bold text-gray-900 mb-2">설정 가이드</h3>
+              <p className="text-gray-600 text-sm">실습 환경 준비하기</p>
+            </div>
+          </Link>
+
+          <Link href="/faq">
+            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer text-center">
+              <div className="text-3xl mb-3">❓</div>
+              <h3 className="font-bold text-gray-900 mb-2">자주 묻는 질문</h3>
+              <p className="text-gray-600 text-sm">FAQ 확인하기</p>
+            </div>
+          </Link>
+
+          <Link href="/glossary">
+            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer text-center">
+              <div className="text-3xl mb-3">📚</div>
+              <h3 className="font-bold text-gray-900 mb-2">용어 사전</h3>
+              <p className="text-gray-600 text-sm">핵심 용어 정의</p>
+            </div>
+          </Link>
+
+          <Link href="/resources">
+            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer text-center">
+              <div className="text-3xl mb-3">🔗</div>
+              <h3 className="font-bold text-gray-900 mb-2">참고 자료</h3>
+              <p className="text-gray-600 text-sm">추가 학습 자료</p>
+            </div>
+          </Link>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8 mt-16">
         <div className="max-w-7xl mx-auto px-6">

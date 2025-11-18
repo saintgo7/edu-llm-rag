@@ -13,6 +13,7 @@ export default function RAGLecturePage() {
       description: 'Retrieval-Augmented Generation의 개념과 기본 원리를 배웁니다.',
       completed: false,
       href: '/rag-lecture/module-1',
+      level: '초급',
     },
     {
       id: 2,
@@ -21,6 +22,7 @@ export default function RAGLecturePage() {
       description: '문서에서 관련 정보를 검색하는 방법을 학습합니다.',
       completed: false,
       href: '/rag-lecture/module-2',
+      level: '초급',
     },
     {
       id: 3,
@@ -29,6 +31,7 @@ export default function RAGLecturePage() {
       description: '검색된 정보를 프롬프트에 통합하는 기술을 배웁니다.',
       completed: false,
       href: '/rag-lecture/module-3',
+      level: '초급',
     },
     {
       id: 4,
@@ -37,6 +40,7 @@ export default function RAGLecturePage() {
       description: 'LLM을 활용한 응답 생성 과정을 이해합니다.',
       completed: false,
       href: '/rag-lecture/module-4',
+      level: '초급',
     },
     {
       id: 5,
@@ -45,6 +49,7 @@ export default function RAGLecturePage() {
       description: 'Python으로 RAG 시스템을 직접 구현해봅니다.',
       completed: false,
       href: '/rag-lecture/module-5',
+      level: '중급',
     },
     {
       id: 6,
@@ -53,6 +58,43 @@ export default function RAGLecturePage() {
       description: 'RAG 시스템의 성능을 개선하고 평가하는 방법을 배웁니다.',
       completed: false,
       href: '/rag-lecture/module-6',
+      level: '중급',
+    },
+    {
+      id: 7,
+      title: '프롬프트 엔지니어링 심화',
+      duration: '35분',
+      description: 'RAG 시스템에서 최고 품질의 답변을 얻기 위한 고급 프롬프트 기법',
+      completed: false,
+      href: '/rag-lecture/module-7',
+      level: '중급',
+    },
+    {
+      id: 8,
+      title: '벡터 DB 비교 및 선택 가이드',
+      duration: '40분',
+      description: 'Pinecone, Weaviate, Milvus 등 벡터 DB 선택하기',
+      completed: false,
+      href: '/rag-lecture/module-8',
+      level: '중급',
+    },
+    {
+      id: 9,
+      title: '실무 RAG 프로젝트',
+      duration: '45분',
+      description: '기업 문서 기반 QA 시스템 전체 구현',
+      completed: false,
+      href: '/rag-lecture/module-9',
+      level: '고급',
+    },
+    {
+      id: 10,
+      title: '고급 기법',
+      duration: '45분',
+      description: 'GraphRAG, MultiModal RAG, Self-RAG 등 차세대 기법',
+      completed: false,
+      href: '/rag-lecture/module-10',
+      level: '고급',
     },
   ];
 
@@ -78,9 +120,9 @@ export default function RAGLecturePage() {
             컴퓨터공학 학생을 위한 Retrieval-Augmented Generation 시스템 완벽 가이드
           </p>
           <div className="mt-4 flex gap-4 text-sm text-gray-600">
-            <span>총 6개 모듈</span>
+            <span>총 10개 모듈</span>
             <span>|</span>
-            <span>약 2시간 15분</span>
+            <span>약 5시간</span>
           </div>
         </div>
       </header>
@@ -187,6 +229,13 @@ export default function RAGLecturePage() {
                     <div className="flex items-center gap-3 mb-2">
                       <span className="bg-blue-100 text-blue-800 text-sm font-bold px-3 py-1 rounded-full">
                         모듈 {module.id}
+                      </span>
+                      <span className={`text-xs font-semibold px-2 py-1 rounded ${
+                        module.level === '초급' ? 'bg-green-100 text-green-800' :
+                        module.level === '중급' ? 'bg-yellow-100 text-yellow-800' :
+                        'bg-red-100 text-red-800'
+                      }`}>
+                        {module.level}
                       </span>
                       <span className="text-gray-500 text-sm">⏱️ {module.duration}</span>
                     </div>
